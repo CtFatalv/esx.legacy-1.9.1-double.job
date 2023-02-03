@@ -5,6 +5,7 @@ Locales["fr"] = {
 	["select_char"] = "Sélectionnez un personnage",
 	["select_char_description"] = "Choix du personnage.",
 	["create_char"] = "Créer un nouveau personnage",
+	["character"] = "Choix du personnage",
 	["char_play"] = "Jouer ce personnage",
 	["char_play_description"] = "Jouer ce personnage",
 	["char_disabled"] = "Ce personnage est désactivé",
