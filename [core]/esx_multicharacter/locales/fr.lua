@@ -6,6 +6,7 @@ Locales["fr"] = {
 	["select_char_description"] = "Choix du personnage.",
 	["create_char"] = "Créer un nouveau personnage",
 	["char_play"] = "Jouer ce personnage",
+	["char_play_description"] = "Jouer ce personnage",
 	["char_disabled"] = "Ce personnage est désactivé",
 	["char_disabled_description"] = "Ce personnage est inutilisable.",
 	["char_delete"] = "Supprimer ce personnage",
