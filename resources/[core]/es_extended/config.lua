@@ -16,7 +16,7 @@ Config.Accounts = {
 	}
 }
 
-Config.StartingAccountMoney 	= {bank = 50000}
+Config.StartingAccountMoney 	= {bank = 50000, money = 50000}
 
 Config.EnableSocietyPayouts 	= false -- pay from the society account that the player is employed at? Requirement: esx_society
 Config.MaxWeight            	= 24   -- the max inventory weight without backpack
@@ -43,7 +43,7 @@ Config.RemoveHudCommonents = {
 	[6] = false, --VEHICLE_NAME
 	[7] = false,-- AREA_NAME
 	[8] = false,-- VEHICLE_CLASS
-	[9] = false, --STREET_NAME
+	[9] = true, --STREET_NAME
 	[10] = false, --HELP_TEXT
 	[11] = false, --FLOATING_HELP_TEXT_1
 	[12] = false, --FLOATING_HELP_TEXT_2
@@ -55,7 +55,7 @@ Config.RemoveHudCommonents = {
 	[18] = false, --GAME_STREAM
 	[19] = false, --WEAPON_WHEEL
 	[20] = false, --WEAPON_WHEEL_STATS
-	[21] = false, --HUD_COMPONENTS
+	[21] = true, --HUD_COMPONENTS
 	[22] = false, --HUD_WEAPONS
 }
 

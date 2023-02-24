@@ -10,8 +10,6 @@ Locales["en"] = {
     currentVersion = "Dernière version : ",
     yourVersion = "Votre version : ",
     latestVersion = "Vous utilisez la dernière version !",
-    needUpdateResource = "Vous devez télécharger la dernière version ! Vous utilisez actuellement l'ancienne version !",
+    needUpdateResource = "Vous devez télécharger la dernière version ! Vous utilisez une ancienne version en ce moment !",
     errorGetCurrentVersion = "Vous obtenez une erreur lorsque vous essayez d'obtenir la version actuelle !"
 }
-
-
