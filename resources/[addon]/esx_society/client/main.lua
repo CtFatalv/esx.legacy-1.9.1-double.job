@@ -171,10 +171,10 @@ function OpenBossMenu(society, close, options)
 					TriggerServerEvent('esx_society:checkSocietyBalance', society)
 				elseif element.value == "withdraw_society_money" then
 					local elements = {
-						{unselectable = true, icon = "fas fa-wallet", title = TranslateCap('withdraw_amount'), description = "Withdraw money from the society account"},
-						{icon = "fas fa-wallet", title = "Amount", input = true, inputType = "number", inputPlaceholder = "Amount to withdraw..", inputMin = 1, inputMax = 250000, name = "withdraw"},
-						{icon = "fas fa-check", title = "Confirm", value = "confirm"},
-						{icon = "fas fa-arrow-left", title = "Return", value = "return"}
+						{unselectable = true, icon = "fas fa-wallet", title = TranslateCap('withdraw_amount'), description = "Retirer de l'argent du compte de la société"},
+						{icon = "fas fa-wallet", title = "Montant", input = true, inputType = "number", inputPlaceholder = "Montant à retirer..", inputMin = 1, inputMax = 250000, name = "withdraw"},
+						{icon = "fas fa-check", title = "Confirmer", value = "confirm"},
+						{icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 					}
 					ESX.RefreshContext(elements)
 				elseif element.value == "confirm" then
@@ -187,10 +187,10 @@ function OpenBossMenu(society, close, options)
 					end
 				elseif element.value == "deposit_money" then
 					local elements = {
-						{unselectable = true, icon = "fas fa-wallet", title = TranslateCap('deposit_amount'), description = "Deposit some money into the society account"},
-						{icon = "fas fa-wallet", title = "Amount", input = true, inputType = "number", inputPlaceholder = "Amount to deposit..", inputMin = 1, inputMax = 250000, name = "deposit"},
-						{icon = "fas fa-check", title = "Confirm", value = "confirm2"},
-						{icon = "fas fa-arrow-left", title = "Return", value = "return"}
+						{unselectable = true, icon = "fas fa-wallet", title = TranslateCap('deposit_amount'), description = "Déposez de l'argent sur le compte de la société"},
+						{icon = "fas fa-wallet", title = "Montant", input = true, inputType = "number", inputPlaceholder = "Montant à déposer..", inputMin = 1, inputMax = 250000, name = "deposit"},
+						{icon = "fas fa-check", title = "Confirmer", value = "confirm2"},
+						{icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 					}
 					ESX.RefreshContext(elements)
 				elseif element.value == "confirm2" then
@@ -203,10 +203,10 @@ function OpenBossMenu(society, close, options)
 					end
 				elseif element.value == "wash_money" then
 					local elements = {
-						{unselectable = true, icon = "fas fa-wallet", title = TranslateCap('wash_money_amount'), description = "Deposit some money into the money wash"},
-						{icon = "fas fa-wallet", title = "Amount", input = true, inputType = "number", inputPlaceholder = "Amount to wash..", inputMin = 1, inputMax = 250000, name = "wash"},
-						{icon = "fas fa-check", title = "Confirm", value = "confirm3"},
-						{icon = "fas fa-arrow-left", title = "Return", value = "return"}
+						{unselectable = true, icon = "fas fa-wallet", title = TranslateCap('wash_money_amount'), description = "Déposez de l'argent dans le lavage de l'argent"},
+						{icon = "fas fa-wallet", title = "Montant", input = true, inputType = "number", inputPlaceholder = "Quantité à laver..", inputMin = 1, inputMax = 250000, name = "wash"},
+						{icon = "fas fa-check", title = "Confirmer", value = "confirm3"},
+						{icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 					}
 					ESX.RefreshContext(elements)
 				elseif element.value == "confirm3" then
@@ -283,10 +283,10 @@ function OpenBossMenu2(society, close, options)
 					TriggerServerEvent('esx_society:checkSocietyBalance2', society)
 				elseif element.value == "withdraw_society_money" then
 					local elements = {
-						{unselectable = true, icon = "fas fa-wallet", title = TranslateCap('withdraw_amount'), description = "Withdraw money from the society account"},
-						{icon = "fas fa-wallet", title = "Amount", input = true, inputType = "number", inputPlaceholder = "Amount to withdraw..", inputMin = 1, inputMax = 250000, name = "withdraw"},
-						{icon = "fas fa-check", title = "Confirm", value = "confirm"},
-						{icon = "fas fa-arrow-left", title = "Return", value = "return"}
+						{unselectable = true, icon = "fas fa-wallet", title = TranslateCap('withdraw_amount'), description = "Retirer de l'argent du compte de la société"},
+						{icon = "fas fa-wallet", title = "Montant", input = true, inputType = "number", inputPlaceholder = "Montant à retirer..", inputMin = 1, inputMax = 250000, name = "withdraw"},
+						{icon = "fas fa-check", title = "Confirmer", value = "confirm"},
+						{icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 					}
 					ESX.RefreshContext(elements)
 				elseif element.value == "confirm" then
@@ -299,10 +299,10 @@ function OpenBossMenu2(society, close, options)
 					end
 				elseif element.value == "deposit_money" then
 					local elements = {
-						{unselectable = true, icon = "fas fa-wallet", title = TranslateCap('deposit_amount'), description = "Deposit some money into the society account"},
-						{icon = "fas fa-wallet", title = "Amount", input = true, inputType = "number", inputPlaceholder = "Amount to deposit..", inputMin = 1, inputMax = 250000, name = "deposit"},
-						{icon = "fas fa-check", title = "Confirm", value = "confirm2"},
-						{icon = "fas fa-arrow-left", title = "Return", value = "return"}
+						{unselectable = true, icon = "fas fa-wallet", title = TranslateCap('deposit_amount'), description = "Déposez de l'argent sur le compte de la société"},
+						{icon = "fas fa-wallet", title = "Montant", input = true, inputType = "number", inputPlaceholder = "Montant à déposer..", inputMin = 1, inputMax = 250000, name = "deposit"},
+						{icon = "fas fa-check", title = "Confirmer", value = "confirm2"},
+						{icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 					}
 					ESX.RefreshContext(elements)
 				elseif element.value == "confirm2" then
@@ -315,10 +315,10 @@ function OpenBossMenu2(society, close, options)
 					end
 				elseif element.value == "wash_money" then
 					local elements = {
-						{unselectable = true, icon = "fas fa-wallet", title = TranslateCap('wash_money_amount'), description = "Deposit some money into the money wash"},
-						{icon = "fas fa-wallet", title = "Amount", input = true, inputType = "number", inputPlaceholder = "Amount to wash..", inputMin = 1, inputMax = 250000, name = "wash"},
-						{icon = "fas fa-check", title = "Confirm", value = "confirm3"},
-						{icon = "fas fa-arrow-left", title = "Return", value = "return"}
+						{unselectable = true, icon = "fas fa-wallet", title = TranslateCap('wash_money_amount'), description = "Déposez de l'argent dans le lavage de l'argent"},
+						{icon = "fas fa-wallet", title = "Montant", input = true, inputType = "number", inputPlaceholder = "Quantité à laver..", inputMin = 1, inputMax = 250000, name = "wash"},
+						{icon = "fas fa-check", title = "Confirmer", value = "confirm3"},
+						{icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 					}
 					ESX.RefreshContext(elements)
 				elseif element.value == "confirm3" then
