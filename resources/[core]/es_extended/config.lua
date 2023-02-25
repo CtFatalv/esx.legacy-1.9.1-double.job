@@ -29,10 +29,10 @@ Config.EnablePVP                = true -- Allow Player to player combat
 Config.Multichar                = true -- Enable support for esx_multicharacter
 Config.Identity                 = true -- Select a characters identity data before they have loaded in (this happens by default with multichar)
 Config.DistanceGive 			= 4.0 -- Max distance when giving items, weapons etc.
-Config.DisableHealthRegeneration  = false -- Player will no longer regenerate health
-Config.DisableVehicleRewards      = false -- Disables Player Recieving weapons from vehicles
-Config.DisableNPCDrops            = false -- stops NPCs from dropping weapons on death
-Config.DisableWeaponWheel         = false -- Disables default weapon wheel
+Config.DisableHealthRegeneration  = true -- Player will no longer regenerate health
+Config.DisableVehicleRewards      = true -- Disables Player Recieving weapons from vehicles
+Config.DisableNPCDrops            = true -- stops NPCs from dropping weapons on death
+Config.DisableWeaponWheel         = true -- Disables default weapon wheel
 Config.DisableAimAssist           = false -- disables AIM assist (mainly on controllers)
 Config.RemoveHudCommonents = {
 	[1] = false, --WANTED_STARS,
@@ -59,7 +59,7 @@ Config.RemoveHudCommonents = {
 	[22] = false, --HUD_WEAPONS
 }
 
-Config.SpawnVehMaxUpgrades = true -- admin vehicles spawn with max vehcle settings
+Config.SpawnVehMaxUpgrades = false -- admin vehicles spawn with max vehcle settings
 --Config.CustomAIPlates = 'ESX.A111' -- Custom plates for AI vehicles 
 -- Pattern string format
 --1 will lead to a random number from 0-9.
