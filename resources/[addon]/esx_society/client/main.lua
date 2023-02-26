@@ -350,7 +350,7 @@ function OpenManageEmployeesMenu(society, options)
 		{icon = "fas fa-users", title = TranslateCap('recruit'), value = "recruit"}
 	}
 	
-	elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Return", value = "return"}
+	elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 	
 	ESX.OpenContext("right", elements, function(menu,element)
 		if element.value == "employee_list" then
@@ -370,7 +370,7 @@ function OpenManageEmployeesMenu2(society, options)
 		{icon = "fas fa-users", title = TranslateCap('recruit'), value = "recruit"}
 	}
 	
-	elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Return", value = "return"}
+	elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 	
 	ESX.OpenContext("right", elements, function(menu,element)
 		if element.value == "employee_list" then
@@ -395,7 +395,7 @@ function OpenEmployeeList(society, options)
 			elements[#elements+1] = {icon = "fas fa-user", title = employees[i].name .. " | " ..gradeLabel, gradeLabel = gradeLabel, data = employees[i]}
 		end
 
-		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Return", value = "return"}
+		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 
 		ESX.OpenContext("right", elements, function(menu,element) 
 			if element.value == "return" then
@@ -403,9 +403,9 @@ function OpenEmployeeList(society, options)
 			else
 				local elements2 = {
 					{unselectable = true, icon = "fas fa-user", title = element.title},
-					{icon = "fas fa-user", title = "Promote", value = "promote"},
-					{icon = "fas fa-user", title = "Fire", value = "fire"},
-					{icon = "fas fa-arrow-left", title = "Return", value = "return"}
+					{icon = "fas fa-user", title = "Promouvoire", value = "promote"},
+					{icon = "fas fa-user", title = "Virer", value = "fire"},
+					{icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 				}
 				ESX.OpenContext("right", elements2, function(menu2,element2)
 					local employee = element.data
@@ -439,7 +439,7 @@ function OpenEmployeeList2(society, options)
 			elements[#elements+1] = {icon = "fas fa-user", title = employees[i].name .. " | " ..gradeLabel, gradeLabel = gradeLabel, data = employees[i]}
 		end
 
-		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Return", value = "return"}
+		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 
 		ESX.OpenContext("right", elements, function(menu,element) 
 			if element.value == "return" then
@@ -447,9 +447,9 @@ function OpenEmployeeList2(society, options)
 			else
 				local elements2 = {
 					{unselectable = true, icon = "fas fa-user", title = element.title},
-					{icon = "fas fa-user", title = "Promote", value = "promote"},
-					{icon = "fas fa-user", title = "Fire", value = "fire"},
-					{icon = "fas fa-arrow-left", title = "Return", value = "return"}
+					{icon = "fas fa-user", title = "Promouvoir", value = "promote"},
+					{icon = "fas fa-user", title = "Virer", value = "fire"},
+					{icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 				}
 				ESX.OpenContext("right", elements2, function(menu2,element2)
 					local employee = element.data
@@ -483,14 +483,14 @@ function OpenRecruitMenu(society, options)
 			end
 		end
 
-		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Return", value = "return"}
+		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 
 		ESX.OpenContext("right", elements, function(menu,element)
 			if element.value == "return" then
 				OpenManageEmployeesMenu(society, options)
 			else
 				local elements2 = {
-					{unselectable = true, icon = "fas fa-user", title = "Confirm"},
+					{unselectable = true, icon = "fas fa-user", title = "Confirmer"},
 					{icon = "fas fa-times", title = TranslateCap('no'), value = "no"},
 					{icon = "fas fa-check", title = TranslateCap('yes'), value = "yes"},
 				}
@@ -521,14 +521,14 @@ function OpenRecruitMenu2(society, options)
 			end
 		end
 
-		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Return", value = "return"}
+		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 
 		ESX.OpenContext("right", elements, function(menu,element)
 			if element.value == "return" then
 				OpenManageEmployeesMenu2(society, options)
 			else
 				local elements2 = {
-					{unselectable = true, icon = "fas fa-user", title = "Confirm"},
+					{unselectable = true, icon = "fas fa-user", title = "Confirmer"},
 					{icon = "fas fa-times", title = TranslateCap('no'), value = "no"},
 					{icon = "fas fa-check", title = TranslateCap('yes'), value = "yes"},
 				}
@@ -562,7 +562,7 @@ function OpenPromoteMenu(society, employee, options)
 			elements[#elements+1] = {icon = "fas fa-user", title = gradeLabel, value = job.grades[i].grade, selected = (employee.job.grade == job.grades[i].grade)}
 		end
 
-		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Return", value = "return"}
+		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 
 		ESX.OpenContext("right", elements, function(menu,element)
 			if element.value == "return" then
@@ -597,7 +597,7 @@ function OpenPromoteMenu2(society, employee, options)
 			elements[#elements+1] = {icon = "fas fa-user", title = gradeLabel, value = job2.grades[i].grade, selected = (employee.job2.grade == job2.grades[i].grade)}
 		end
 
-		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Return", value = "return"}
+		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 
 		ESX.OpenContext("right", elements, function(menu,element)
 			if element.value == "return" then
@@ -635,13 +635,13 @@ function OpenManageSalaryMenu(society, options)
 			}
 		end
 			
-		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Return", value = "return"}
+		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 
 		ESX.OpenContext("right", elements, function(menu,element)
 			local elements = {
-				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Change a grade salary amount", value = element.value},
-				{icon = "fas fa-wallet", title = "Amount", input = true, inputType = "number", inputPlaceholder = "Amount to change grade salary..", inputMin = 1, inputMax = Config.MaxSalary, name = "gradesalary"},
-				{icon = "fas fa-check", title = "Confirm", value = "confirm"}
+				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Modifier le montant d'un salaire de grade", value = element.value},
+				{icon = "fas fa-wallet", title = "Montant", input = true, inputType = "number", inputPlaceholder = "Montant du grade..", inputMin = 1, inputMax = Config.MaxSalary, name = "gradesalary"},
+				{icon = "fas fa-check", title = "Confirmer", value = "confirm"}
 			}
 
 			ESX.RefreshContext(elements)
@@ -688,13 +688,13 @@ function OpenManageSalaryMenu2(society, options)
 			}
 		end
 			
-		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Return", value = "return"}
+		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 
 		ESX.OpenContext("right", elements, function(menu,element)
 			local elements = {
-				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Change a grade salary amount", value = element.value},
-				{icon = "fas fa-wallet", title = "Amount", input = true, inputType = "number", inputPlaceholder = "Amount to change grade salary..", inputMin = 1, inputMax = Config.MaxSalary, name = "gradesalary"},
-				{icon = "fas fa-check", title = "Confirm", value = "confirm"}
+				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Modifier le montant d'un salaire de grade", value = element.value},
+				{icon = "fas fa-wallet", title = "Montant", input = true, inputType = "number", inputPlaceholder = "Montant du grade..", inputMin = 1, inputMax = Config.MaxSalary, name = "gradesalary"},
+				{icon = "fas fa-check", title = "Confirmer", value = "confirm"}
 			}
 
 			ESX.RefreshContext(elements)
@@ -736,13 +736,13 @@ function OpenManageGradesMenu(society, options)
 			elements[#elements+1] = {icon = "fas fa-wallet", title = ('%s'):format(gradeLabel), value = job.grades[i].grade}
 		end
 			
-		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Return", value = "return"}
+		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 
 		ESX.OpenContext("right", elements, function(menu,element)
 			local elements = {
-				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Change a grade label", value = element.value},
-				{icon = "fas fa-wallet", title = "Label", input = true, inputType = "text", inputPlaceholder = "Label to change job grade label..", name = "gradelabel"},
-				{icon = "fas fa-check", title = "Confirm", value = "confirm"}
+				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Changer de grade", value = element.value},
+				{icon = "fas fa-wallet", title = "Grade", input = true, inputType = "text", inputPlaceholder = "Modifier le grade..", name = "gradelabel"},
+				{icon = "fas fa-check", title = "Confirmer", value = "confirm"}
 			}
 
 			ESX.RefreshContext(elements)
@@ -781,13 +781,13 @@ function OpenManageGradesMenu2(society, options)
 			elements[#elements+1] = {icon = "fas fa-wallet", title = ('%s'):format(gradeLabel), value = job2.grades[i].grade}
 		end
 			
-		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Return", value = "return"}
+		elements[#elements+1] = {icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 
 		ESX.OpenContext("right", elements, function(menu,element)
 			local elements = {
-				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Change a grade label", value = element.value},
-				{icon = "fas fa-wallet", title = "Label", input = true, inputType = "text", inputPlaceholder = "Label to change job2 grade label..", name = "gradelabel"},
-				{icon = "fas fa-check", title = "Confirm", value = "confirm"}
+				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Changer de grade", value = element.value},
+				{icon = "fas fa-wallet", title = "Grade", input = true, inputType = "text", inputPlaceholder = "Modifier le grade..", name = "gradelabel"},
+				{icon = "fas fa-check", title = "Confirmer", value = "confirm"}
 			}
 
 			ESX.RefreshContext(elements)
