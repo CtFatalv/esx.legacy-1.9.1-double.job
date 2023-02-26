@@ -203,7 +203,7 @@ function OpenBossMenu(society, close, options)
 					end
 				elseif element.value == "wash_money" then
 					local elements = {
-						{unselectable = true, icon = "fas fa-wallet", title = TranslateCap('wash_money_amount'), description = "Déposez de l'argent dans le lavage de l'argent"},
+						{unselectable = true, icon = "fas fa-wallet", title = TranslateCap('wash_money_amount'), description = "Déposez de l'argent sale"},
 						{icon = "fas fa-wallet", title = "Montant", input = true, inputType = "number", inputPlaceholder = "Quantité à laver..", inputMin = 1, inputMax = 250000, name = "wash"},
 						{icon = "fas fa-check", title = "Confirmer", value = "confirm3"},
 						{icon = "fas fa-arrow-left", title = "Retour", value = "return"}
@@ -315,7 +315,7 @@ function OpenBossMenu2(society, close, options)
 					end
 				elseif element.value == "wash_money" then
 					local elements = {
-						{unselectable = true, icon = "fas fa-wallet", title = TranslateCap('wash_money_amount'), description = "Déposez de l'argent dans le lavage de l'argent"},
+						{unselectable = true, icon = "fas fa-wallet", title = TranslateCap('wash_money_amount'), description = "Déposez de l'argent sale"},
 						{icon = "fas fa-wallet", title = "Montant", input = true, inputType = "number", inputPlaceholder = "Quantité à laver..", inputMin = 1, inputMax = 250000, name = "wash"},
 						{icon = "fas fa-check", title = "Confirmer", value = "confirm3"},
 						{icon = "fas fa-arrow-left", title = "Retour", value = "return"}
@@ -639,8 +639,8 @@ function OpenManageSalaryMenu(society, options)
 
 		ESX.OpenContext("right", elements, function(menu,element)
 			local elements = {
-				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Modifier le montant d'un salaire de grade", value = element.value},
-				{icon = "fas fa-wallet", title = "Montant", input = true, inputType = "number", inputPlaceholder = "Montant du grade..", inputMin = 1, inputMax = Config.MaxSalary, name = "gradesalary"},
+				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Modifier le salaire", value = element.value},
+				{icon = "fas fa-wallet", title = "Montant", input = true, inputType = "number", inputPlaceholder = "Nouveau salaire..", inputMin = 1, inputMax = Config.MaxSalary, name = "gradesalary"},
 				{icon = "fas fa-check", title = "Confirmer", value = "confirm"}
 			}
 
@@ -692,8 +692,8 @@ function OpenManageSalaryMenu2(society, options)
 
 		ESX.OpenContext("right", elements, function(menu,element)
 			local elements = {
-				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Modifier le montant d'un salaire de grade", value = element.value},
-				{icon = "fas fa-wallet", title = "Montant", input = true, inputType = "number", inputPlaceholder = "Montant du grade..", inputMin = 1, inputMax = Config.MaxSalary, name = "gradesalary"},
+				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Modifier le salaire", value = element.value},
+				{icon = "fas fa-wallet", title = "Montant", input = true, inputType = "number", inputPlaceholder = "Nouveau salaire..", inputMin = 1, inputMax = Config.MaxSalary, name = "gradesalary"},
 				{icon = "fas fa-check", title = "Confirmer", value = "confirm"}
 			}
 
