@@ -1,6 +1,7 @@
 Locales['fr'] = {
   ['actions']                = 'actions',
   ['boss_menu']              = 'patron',
+  ['money_generic']          = '$%s',
   ['check_balance']          = '$%s',
   ['check_society_balance']  = 'voir l\'argent de la société',
   ['deposit_amount']         = 'montant du dépôt',

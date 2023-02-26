@@ -404,7 +404,7 @@ function OpenEmployeeList(society, options)
 				local elements2 = {
 					{unselectable = true, icon = "fas fa-user", title = element.title},
 					{icon = "fas fa-user", title = "Promouvoir", value = "promote"},
-					{icon = "fas fa-user", title = "Virer", value = "fire"},
+					{icon = "fas fa-user", title = "ViIrer", value = "fire"},
 					{icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 				}
 				ESX.OpenContext("right", elements2, function(menu2,element2)
@@ -740,8 +740,8 @@ function OpenManageGradesMenu(society, options)
 
 		ESX.OpenContext("right", elements, function(menu,element)
 			local elements = {
-				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Changer de grade", value = element.value},
-				{icon = "fas fa-wallet", title = "Grade", input = true, inputType = "text", inputPlaceholder = "Modifier le grade..", name = "gradelabel"},
+				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Change a grade label", value = element.value},
+				{icon = "fas fa-wallet", title = "Label", input = true, inputType = "text", inputPlaceholder = "Label to change job grade label..", name = "gradelabel"},
 				{icon = "fas fa-check", title = "Confirmer", value = "confirm"}
 			}
 
@@ -785,8 +785,8 @@ function OpenManageGradesMenu2(society, options)
 
 		ESX.OpenContext("right", elements, function(menu,element)
 			local elements = {
-				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Changer de grade", value = element.value},
-				{icon = "fas fa-wallet", title = "Grade", input = true, inputType = "text", inputPlaceholder = "Modifier le grade..", name = "gradelabel"},
+				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Change a grade label", value = element.value},
+				{icon = "fas fa-wallet", title = "Label", input = true, inputType = "text", inputPlaceholder = "Label to change job2 grade label..", name = "gradelabel"},
 				{icon = "fas fa-check", title = "Confirmer", value = "confirm"}
 			}
 
