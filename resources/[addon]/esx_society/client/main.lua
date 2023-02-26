@@ -403,7 +403,7 @@ function OpenEmployeeList(society, options)
 			else
 				local elements2 = {
 					{unselectable = true, icon = "fas fa-user", title = element.title},
-					{icon = "fas fa-user", title = "Promouvoire", value = "promote"},
+					{icon = "fas fa-user", title = "Promouvoir", value = "promote"},
 					{icon = "fas fa-user", title = "Virer", value = "fire"},
 					{icon = "fas fa-arrow-left", title = "Retour", value = "return"}
 				}
