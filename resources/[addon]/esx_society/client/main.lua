@@ -740,8 +740,8 @@ function OpenManageGradesMenu(society, options)
 
 		ESX.OpenContext("right", elements, function(menu,element)
 			local elements = {
-				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Change a grade label", value = element.value},
-				{icon = "fas fa-wallet", title = "Label", input = true, inputType = "text", inputPlaceholder = "Label to change job grade label..", name = "gradelabel"},
+				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Changer le nom du grade", value = element.value},
+				{icon = "fas fa-wallet", title = "Label", input = true, inputType = "text", inputPlaceholder = "Changer le nom du grade..", name = "gradelabel"},
 				{icon = "fas fa-check", title = "Confirmer", value = "confirm"}
 			}
 
@@ -785,8 +785,8 @@ function OpenManageGradesMenu2(society, options)
 
 		ESX.OpenContext("right", elements, function(menu,element)
 			local elements = {
-				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Change a grade label", value = element.value},
-				{icon = "fas fa-wallet", title = "Label", input = true, inputType = "text", inputPlaceholder = "Label to change job2 grade label..", name = "gradelabel"},
+				{unselectable = true, icon = "fas fa-wallet", title = element.title, description = "Changer le nom du grade", value = element.value},
+				{icon = "fas fa-wallet", title = "Label", input = true, inputType = "text", inputPlaceholder = "Changer le nom du grade..", name = "gradelabel"},
 				{icon = "fas fa-check", title = "Confirmer", value = "confirm"}
 			}
 
