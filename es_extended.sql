@@ -320,12 +320,12 @@ INSERT INTO `items` (`name`, `label`, `weight`, `rare`, `can_remove`) VALUES
 ('petrol_raffin', 'Huile raffiné', 1, 0, 1),
 ('phone', 'Phone', 1, 0, 1),
 ('radio', 'Radio', 1, 0, 1),
-('slaughtered_chicken', 'Slaughtered chicken', 1, 0, 1),
-('stone', 'Stone', 1, 0, 1),
-('washed_stone', 'Washed stone', 1, 0, 1),
-('water', 'Water', 1, 0, 1),
-('wood', 'Wood', 1, 0, 1),
-('wool', 'Wool', 1, 0, 1);
+('slaughtered_chicken', 'Poulet abbatu', 1, 0, 1),
+('stone', 'Pierre', 1, 0, 1),
+('washed_stone', 'Pierre lavé', 1, 0, 1),
+('water', 'Eau', 1, 0, 1),
+('wood', 'Bois', 1, 0, 1),
+('wool', 'Laine', 1, 0, 1);
 
 -- --------------------------------------------------------
 
