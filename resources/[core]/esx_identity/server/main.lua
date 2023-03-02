@@ -68,7 +68,7 @@ local function formatDate(str)
     local date = str
 
     if Config.DateFormat == "DD/MM/YYYY" then
-        date = m .. "/" .. d .. "/" .. y
+        date = d .. "/" .. m .. "/" .. y
     elseif Config.DateFormat == "YYYY/MM/DD" then
         date = y .. "/" .. m .. "/" .. d
     end
