@@ -44,8 +44,8 @@ local function checkDOBFormat(str)
     
     local d, m, y = string.match(str, '(%d+)/(%d+)/(%d+)')
         
-    m = tonumber(m)
     d = tonumber(d)
+    m = tonumber(m)
     y = tonumber(y)
 
     if ((d <= 0) or (d > 31)) or ((m <= 0) or (m > 12)) or ((y <= Config.LowestYear) or (y > Config.HighestYear)) then
