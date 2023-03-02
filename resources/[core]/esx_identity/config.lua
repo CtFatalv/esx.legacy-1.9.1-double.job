@@ -9,7 +9,7 @@ Config.EnableCommands   = ESX.GetConfig().EnableDebug
 Config.UseDeferrals     = false
 
 -- These values are for the date format in the registration menu
--- Choices: DD/MM/YYYY | DD/MM/YYYY | YYYY/MM/DD
+-- Choices: DD/MM/YYYY | MM/DD/YYYY | YYYY/MM/DD
 Config.DateFormat       = 'DD/MM/YYYY'
 
 -- These values are for the second input validation in server/main.lua
