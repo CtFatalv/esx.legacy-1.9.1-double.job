@@ -15,9 +15,9 @@ $(document).ready(function () {
 
     const dateCheck = new Date(dofVal);
 
-    const year = new Intl.DateTimeFormat('fr', { year: 'numeric' }).format(dateCheck);
-    const month = new Intl.DateTimeFormat('fr', { month: '2-digit' }).format(dateCheck);
-    const day = new Intl.DateTimeFormat('fr', { day: '2-digit' }).format(dateCheck);
+    const year = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(dateCheck);
+    const month = new Intl.DateTimeFormat('en', { month: '2-digit' }).format(dateCheck);
+    const day = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(dateCheck);
 
     const formattedDate = `${day}/${month}/${year}`;
 

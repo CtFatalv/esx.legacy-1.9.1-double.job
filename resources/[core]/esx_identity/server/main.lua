@@ -44,8 +44,8 @@ local function checkDOBFormat(str)
     
     local d, m, y = string.match(str, '(%d+)/(%d+)/(%d+)')
         
-    d = tonumber(d)
     m = tonumber(m)
+    d = tonumber(d)
     y = tonumber(y)
 
     if ((d <= 0) or (d > 31)) or ((m <= 0) or (m > 12)) or ((y <= Config.LowestYear) or (y > Config.HighestYear)) then
@@ -67,8 +67,8 @@ local function formatDate(str)
     local d, m, y = string.match(str, '(%d+)/(%d+)/(%d+)')
     local date = str
 
-    if Config.DateFormat == "DD/MM/YYYY" then
-        date = d .. "/" .. m .. "/" .. y
+    if Config.DateFormat == "MM/DD/YYYY" then
+        date = m .. "/" .. d .. "/" .. y
     elseif Config.DateFormat == "YYYY/MM/DD" then
         date = y .. "/" .. m .. "/" .. d
     end
@@ -142,7 +142,7 @@ if Config.UseDeferrals then
                             deferrals.presentCard(
                                 [==[{"type": "AdaptiveCard","body":[{"type":"Container","items":[{"type":"ColumnSet",
                                 "columns":[{"type":"Column","items":[{"type":"Input.Text","placeholder":"Nom",
-                                "id":"firstname","maxLength":15},{"type":"Input.Text","placeholder":"Date de naissance (DD/MM/YYYY)",
+                                "id":"firstname","maxLength":15},{"type":"Input.Text","placeholder":"Date de naissance (MM/DD/YYYY)",
                                 "id":"dateofbirth","maxLength":10}],"width":"stretch"},{"type":"Column","width":"stretch",
                                 "items":[{"type":"Input.Text","placeholder":"Prénom","id":"lastname","maxLength":15},
                                 {"type":"Input.Text","placeholder":"Taille (48-96 inches)","id":"height","maxLength":2}]}]},
@@ -178,7 +178,7 @@ if Config.UseDeferrals then
                         deferrals.presentCard(
                             [==[{"type": "AdaptiveCard","body":[{"type":"Container","items":[{"type":"ColumnSet","columns":[{
                             "type":"Column","items":[{"type":"Input.Text","placeholder":"Nom","id":"firstname",
-                            "maxLength":15},{"type":"Input.Text","placeholder":"Date de naissance (DD/MM/YYYY)","id":"dateofbirth",
+                            "maxLength":15},{"type":"Input.Text","placeholder":"Date de naissance (MM/DD/YYYY)","id":"dateofbirth",
                             "maxLength":10}],"width":"stretch"},{"type":"Column","width":"stretch","items":[{"type":"Input.Text",
                             "placeholder":"Prénom","id":"lastname","maxLength":15},{"type":"Input.Text",
                             "placeholder":"Taille (48-96 inches)","id":"height","maxLength":2}]}]},{"type":"Input.ChoiceSet",
